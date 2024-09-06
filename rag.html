@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        Name:<input type="text" name="nm">
+        Email:<input type="text" name="em">
+        <input type="submit" name="sb">
+    </form>
+    <?<php
+    $ con=mysqli_connect(' localhost ','root','','record');
+    if (isset ( $_post ['sb']))
+    {
+        $ Name=$ post ['nm'];
+        $ Email=$ post ['em']
+        $ query = insert into register (Name,Email)values ('$ Name','$Email')";
+        $ run=mysqli_query ($con, $ query)
+    }
+    ?>
+</body>
+</html>
